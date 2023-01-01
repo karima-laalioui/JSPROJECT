@@ -1,15 +1,14 @@
-const arr = []
+const arr = [];
 do {
     // arr.length=0
     // Generating random number
-    const randomNumber = Math.floor(Math.random() * (courses.length - 1)) + 1
+    const randomNumber = Math.floor(Math.random() * (courses.length - 1)) + 1;
 
-    // Pushing into the array only 
+    // Pushing into the array only
     // if the array does not contain it
     if (!arr.includes(randomNumber)) {
         arr.push(randomNumber);
     }
-
 } while (arr.length < 3);
 
 var IM1 = document.getElementById("I1"),
@@ -33,13 +32,11 @@ for (i = 0; i < 3; i++) {
     C[i].innerHTML = courses[arr[i]].category;
     P[i].innerHTML = courses[arr[i]].price;
 }
-var btn1=document.querySelector(".btnCL")
-var btn2=document.querySelector(".btnCL2")
-btn1.addEventListener('click', (event)=>{
-    window.location.href = "../courses.html";
-
-})
-btn2.addEventListener('click', (event)=>{
-    window.location.href = "../courses.html";
-
-})
+var btn1 = document.querySelector(".btnCL");
+var btn2 = document.querySelector(".btnCL2");
+btn1.addEventListener("click", (event) => {
+    window.location.href = "courses.html";
+});
+btn2.addEventListener("click", (event) => {
+    window.location.href = "courses.html";
+});
