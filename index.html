@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style-index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="Container">
+            
+            
+            <form method="post" id="form1">
+                <h3>Sign in</h3>
+                <div class="user-prev">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter your name" id="username" autocomplete="off">
+                <div class="user-notif">Username should be between 3 and 30 charachter</div>
+            </div>
+            <div class="email-prev">
+
+                <label for="email">Email</label>
+                
+        
+                <input type="email" placeholder="Enter your email" id="email" autocomplete="off">
+                <div class="em-notif">It's necessary to enter your email</div>
+            </div>
+            <div class="pass-prev">
+
+                <label for="password">Password</label>
+                
+            
+                <input type="password" placeholder="Enter your Password" id="password">
+                
+                
+                <div class="pass-notif">The password needs to contain at least 8 charachters, 1 capital letter, 1 non-capital letter,
+                     1 number, 1 special charachter(!@#$%^&amp;*).</div>
+                     <input type="password" placeholder="Confirm Password" id="cpassword">
+                     <div class="cpass-notif">Please enter the same password.</div>
+                
+                
+                
+            </div>
+
+            
+            <input type="button" id="login-btn" value="LOG IN">
+        
+
+        </form>
+        <div class="second-container">
+            <div class="signin-mes">
+                <h1>Welcome to our Page</h1>
+            </div>
+            
+        </div>
+    </div>
+    <script src="./scripts/script-index.js"></script>
+</body>
+</html>
